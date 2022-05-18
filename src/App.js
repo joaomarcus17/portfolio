@@ -1,42 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-import React  from 'react';
-
+import React from 'react';
+import { NavBar, DivCont, DivPai, DivImg, ImgBanner, ImgProgrammer, DivFilho } from './stylePort/style.js';
+import banner from './images/banner.png'
+import programmer from './images/programmer.png'
 
 function App() {
-  return (
-    <div className="App">
-        <header>
-          <nav>
-              <ul class="cabecalho">
-                  <li class="navStyle">
-                      <a href="#">Home</a>
-                  </li>
-                  <li class="navStyle">
-                      <a href="#">Sobre mim</a>
-                  </li>
-                  <li class="navStyle">
-                      <a href="#">Portfolio</a>
-                  </li>
-                  <li class="navStyle">
-                      <a href="#">Contatos</a>
-                  </li>
-              </ul>
-          </nav>
-      </header>
-      <div class="banner">
-    
-      </div>
-      <section class="Sobre">
-          <h1>Sobre mim</h1>
-          <p>dkakdhadhkadhkadhadhkadhkadhkadhkgh  asfi </p>
-      </section>
+    return (
+        <DivPai>
+            <DivFilho>
+            <header>
+                <NavBar>
+                    <a href="#">Home</a>
+                    <a href="#">Sobre mim</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Contatos</a>
 
-      <section class="Portfolio">
-          <h1>Portfolio</h1>
-      </section>
-    </div>
-  );
+                </NavBar>
+            </header>
+            <DivImg>
+                <ImgBanner src={banner} />
+                <ImgProgrammer src={programmer} />
+            </DivImg>
+            <DivCont>
+                <h1>Sobre mim</h1>
+
+            </DivCont>
+
+            <section class="Portfolio">
+                <h1>Portfolio</h1>
+            </section>
+            </DivFilho>
+        </DivPai>
+    );
 }
 
 export default App;
