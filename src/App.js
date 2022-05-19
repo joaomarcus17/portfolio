@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBar, DivCont, DivPai, ImgProgrammer, DivFilho, DivLogo, DivLinks, Links, LetrasBanner, DivFundo} from './stylePort/style.js';
+import { NavBar, DivCont, DivPai, ImgProgrammer, DivFilho, DivLogo, DivLinks, Links, LetrasBanner, DivFundo, LetrasP} from './stylePort/style.js';
 import programmer from './images/programmer.png'
 import eu from './images/eu.png'
 
@@ -22,7 +22,10 @@ function App() {
                 </header>
                 <DivFundo>
                     <ImgProgrammer src={programmer} />
-                    <LetrasBanner>Kshkhak</LetrasBanner>
+                    <div>
+                        <LetrasBanner>João Marcus</LetrasBanner>
+                        <LetrasP>Programador Web</LetrasP>
+                    </div>
                 </DivFundo>
                 <DivCont>
                     <h1>Sobre mim</h1>

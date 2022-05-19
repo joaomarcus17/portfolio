@@ -36,10 +36,10 @@ export const DivCont = styled.div`
 export const DivFundo = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   background-image: url(${banner});
-  background: green;
-  
+
   `
 
 export const ImgProgrammer = styled.img`
@@ -48,8 +48,11 @@ export const ImgProgrammer = styled.img`
   `
 
 export const LetrasBanner = styled.h1`
-  position: absolute;
-  right: 5em;
-  margin-top: 5em;
+ 
+ margin-right: 8em;
 `
 
+export const LetrasP = styled.p`
+margin-left: 2em;
+
+`
