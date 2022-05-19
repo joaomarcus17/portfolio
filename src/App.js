@@ -1,33 +1,40 @@
 import React from 'react';
-import { NavBar, DivCont, DivPai, DivImg, ImgBanner, ImgProgrammer, DivFilho } from './stylePort/style.js';
-import banner from './images/banner.png'
+import { NavBar, DivCont, DivPai, ImgProgrammer, DivFilho, DivLogo, DivLinks, Links, LetrasBanner, DivFundo} from './stylePort/style.js';
 import programmer from './images/programmer.png'
+import eu from './images/eu.png'
+
 
 function App() {
     return (
         <DivPai>
             <DivFilho>
-            <header>
-                <NavBar>
-                    <a href="#">Home</a>
-                    <a href="#">Sobre mim</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Contatos</a>
+                <header>
+                    <NavBar>
+                        <DivLogo>
+                            <Links href="#">Home</Links>
+                        </DivLogo>
+                        <DivLinks>
+                            <Links href="#">Sobre mim</Links>
+                            <Links href="#">Portfolio</Links>
+                            <Links href="#">Contatos</Links>
+                        </DivLinks>
+                    </NavBar>
+                </header>
+                <DivFundo>
+                    <ImgProgrammer src={programmer} />
+                    <LetrasBanner>Kshkhak</LetrasBanner>
+                </DivFundo>
+                <DivCont>
+                    <h1>Sobre mim</h1>
+                </DivCont>
+               
+        
+                    <p>Olá, sou João Marcus, tenho 22 anos e sou um estudante de Análise e Desenvolvimento de Sistemas da Faminas - Muriaé e um futuro Programador Web. Gosto de ler, ouvir musica, aprender coisas novas e de desafios.</p>
 
-                </NavBar>
-            </header>
-            <DivImg>
-                <ImgBanner src={banner} />
-                <ImgProgrammer src={programmer} />
-            </DivImg>
-            <DivCont>
-                <h1>Sobre mim</h1>
-
-            </DivCont>
-
-            <section class="Portfolio">
-                <h1>Portfolio</h1>
-            </section>
+                
+                <section class="Portfolio">
+                    <h1>Portfolio</h1>
+                </section>
             </DivFilho>
         </DivPai>
     );

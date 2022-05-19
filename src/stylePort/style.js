@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import banner from '../images/banner.png'
 
 export const DivPai = styled.div`
   background-color: #E5E5E5;
@@ -11,26 +12,44 @@ export const DivFilho = styled.div`
   width: 80em;
 `
 
+export const DivLogo = styled.div`
+display: flex;
+`
 export const NavBar = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  margin: 0.50em;
+  justify-content: space-between;
+  `
+export const DivLinks = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 15em;
 `
+export const Links = styled.a`
+  text-decoration: none;
+`
+
 export const DivCont = styled.div`
   display: flex;
   justify-content: center;
 `
-export const DivImg = styled.div`
+export const DivFundo = styled.div`
   display: flex;
-  justify-items: auto;
+  justify-content: space-between;
   width: 100%;
-  background-color: green;
-  `
-export const ImgBanner = styled.img`
-  display: flex;
-  width: 100%;
+  background-image: url(${banner});
+  background: green;
+  
   `
 
 export const ImgProgrammer = styled.img`
-  position: absolute;
-  display: flex;
+
+  
   `
+
+export const LetrasBanner = styled.h1`
+  position: absolute;
+  right: 5em;
+  margin-top: 5em;
+`
+
