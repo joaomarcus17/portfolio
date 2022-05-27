@@ -11,7 +11,8 @@ import {
   LetrasBanner,
   DivFundo,
   LetrasP,
-  DivFotoT
+  DivFotoT,
+  Habilidades
 } from "./stylePort/style.js";
 import programmer from "./images/programmer.png";
 import eu from "./images/eu.png";
@@ -53,7 +54,23 @@ function App() {
             de desafios.
           </p>
         </DivFotoT>
-
+        <Habilidades>
+          <h2>Habilidades</h2>
+          <div>
+            <p>Front-End</p>
+            <h6>CSS</h6>
+            <h6>HTML</h6>
+            <h6>JAVASCRIPT</h6>
+            <h6>REACT</h6>
+          </div>
+          <div>
+            <p>Back-End</p>
+          </div>
+          <div> 
+            <p>Design</p>
+          </div>
+          
+        </Habilidades>
         <div>
           <h1>Portfolio</h1>
         </div>

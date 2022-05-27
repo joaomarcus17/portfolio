@@ -68,3 +68,23 @@ export const DivFotoT = styled.div`
   display: flex;
   justify-content: space-around;
 `;
+export const Habilidades = styled.div`
+  text-align: center;
+  color:  #990285;
+
+  p{
+  
+    transform: rotate(-90deg);
+    
+  }
+  div{
+    display: inline-block;
+    justify-content: space-between;
+    width: 33%;
+  }
+
+  h6{
+    margin-right: -6em;
+    margin-bottom: -2.5em;
+  }
+`
