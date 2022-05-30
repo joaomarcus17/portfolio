@@ -12,7 +12,11 @@ import {
   DivFundo,
   LetrasP,
   DivFotoT,
-  Habilidades
+  Habilidades,
+  LetrasDeitadas,
+  HabiCont,
+  HabilidadePai,
+  HabiNeto,
 } from "./stylePort/style.js";
 import programmer from "./images/programmer.png";
 import eu from "./images/eu.png";
@@ -54,22 +58,42 @@ function App() {
             de desafios.
           </p>
         </DivFotoT>
-        <Habilidades>
+        <HabilidadePai>
           <h2>Habilidades</h2>
-          <div>
-            <p>Front-End</p>
-            <h6>CSS</h6>
-            <h6>HTML</h6>
-            <h6>JAVASCRIPT</h6>
-            <h6>REACT</h6>
-          </div>
-          <div>
-            <p>Back-End</p>
-          </div>
-          <div> 
-            <p>Design</p>
-          </div>
-          
+        </HabilidadePai>
+        <Habilidades>
+          <HabiNeto>
+            <div>
+              <LetrasDeitadas>Front-End</LetrasDeitadas>
+            </div>
+            <HabiCont>
+              <p>CSS</p>
+              <p>HTML</p>
+              <p>JAVASCRIPT</p>
+              <p>REACT</p>
+            </HabiCont>
+          </HabiNeto>
+          <HabiNeto>
+            <div>
+              <LetrasDeitadas>Back-End</LetrasDeitadas>
+            </div>
+            <HabiCont>
+              <p>PHP</p>
+              <p>JAVA</p>
+              <p>PYTHON</p>
+            </HabiCont>
+          </HabiNeto>
+          <HabiNeto>
+            <div>
+              <LetrasDeitadas>Front-End</LetrasDeitadas>
+            </div>
+            <HabiCont>
+              <p>CSS</p>
+              <p>HTML</p>
+              <p>JAVASCRIPT</p>
+              <p>REACT</p>
+            </HabiCont>
+          </HabiNeto>
         </Habilidades>
         <div>
           <h1>Portfolio</h1>

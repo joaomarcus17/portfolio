@@ -8,7 +8,11 @@ export const DivPai = styled.div`
   align-items: center;
 `;
 export const DivFilho = styled.div`
-  width: 80em;
+  width: 1600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const DivLogo = styled.div`
@@ -52,13 +56,13 @@ export const ImgProgrammer = styled.img``;
 
 export const LetrasBanner = styled.h1`
   color: #c4c4c4;
-  font-size: 5em;
+  font-size: 4em;
   margin-top: 1em;
 `;
 
 export const LetrasP = styled.p`
   color: #c4c4c4;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   margin-top: -1em;
   margin-left: -0.5em;
@@ -66,25 +70,49 @@ export const LetrasP = styled.p`
 
 export const DivFotoT = styled.div`
   display: flex;
-  justify-content: space-around;
-`;
-export const Habilidades = styled.div`
-  text-align: center;
-  color:  #990285;
+  justify-items: center;
+  align-items: center;
+  color: #373737;
+  background: red;
 
   p{
+    max-width: 400px;
+    margin-left: 400px;
+  }
+`;
+export const Habilidades = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
-    transform: rotate(-90deg);
-    
-  }
-  div{
-    display: inline-block;
-    justify-content: space-between;
-    width: 33%;
-  }
+`;
+export const LetrasDeitadas = styled.p`
+  transform: rotate(-90deg);
+  font-size: 1.5rem;
+  color: #2B0E64;
+`;
 
-  h6{
-    margin-right: -6em;
-    margin-bottom: -2.5em;
+export const HabiCont = styled.div`
+  display: inline-block;
+  justify-content: space-evenly;
+  color: #373737;
+  font-size: 1rem;
+`;
+
+export const HabilidadePai = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #990285;
+`;
+
+export const HabiNeto = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
   }
-`
+`;
