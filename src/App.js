@@ -17,10 +17,16 @@ import {
   HabiCont,
   HabilidadePai,
   HabiNeto,
+  Port,
+  ConTs,
+  Projetos,
+  ProjetosBox,
 } from "./stylePort/style.js";
 import programmer from "./images/programmer.png";
 import eu from "./images/eu.png";
-
+import thai_tanic from "./images/thai_tanic.png";
+import BabyCare from "./images/BabyCare.png";
+import react from "./images/react.png";
 function App() {
   return (
     <DivPai>
@@ -85,19 +91,33 @@ function App() {
           </HabiNeto>
           <HabiNeto>
             <div>
-              <LetrasDeitadas>Front-End</LetrasDeitadas>
+              <LetrasDeitadas>Design</LetrasDeitadas>
             </div>
             <HabiCont>
-              <p>CSS</p>
-              <p>HTML</p>
-              <p>JAVASCRIPT</p>
-              <p>REACT</p>
+              <p>FIGMA</p>
             </HabiCont>
           </HabiNeto>
         </Habilidades>
-        <div>
+        <Port>
           <h1>Portfolio</h1>
-        </div>
+        </Port>
+        <Projetos>
+          <ProjetosBox>
+            <img src={thai_tanic} />
+            <p>Thai Tanic</p>
+          </ProjetosBox>
+          <ProjetosBox>
+            <img src={BabyCare} />
+            <p>BabyCare</p>
+          </ProjetosBox>
+          <ProjetosBox>
+            <img src={react} />
+            <p>Whyzap</p>
+          </ProjetosBox>
+        </Projetos>
+        <ConTs>
+          <h1>Contatos</h1>
+        </ConTs>
       </DivFilho>
     </DivPai>
   );

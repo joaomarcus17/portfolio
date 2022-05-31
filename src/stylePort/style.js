@@ -56,13 +56,13 @@ export const ImgProgrammer = styled.img``;
 
 export const LetrasBanner = styled.h1`
   color: #c4c4c4;
-  font-size: 4em;
+  font-size: 6em;
   margin-top: 1em;
 `;
 
 export const LetrasP = styled.p`
   color: #c4c4c4;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   margin-top: -1em;
   margin-left: -0.5em;
@@ -73,30 +73,39 @@ export const DivFotoT = styled.div`
   justify-items: center;
   align-items: center;
   color: #373737;
-  background: red;
 
-  p{
-    max-width: 400px;
-    margin-left: 400px;
+  p {
+    margin-left: 150px;
+    font-size: 30px;
+    padding-right: 20px;
+  }
+
+  img{
+    width: 400px;
+    border-radius: 100%;
+    height: 400px;
+    padding-left: 20px;
   }
 `;
 export const Habilidades = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  margin-top: 10px;
 `;
 export const LetrasDeitadas = styled.p`
   transform: rotate(-90deg);
   font-size: 1.5rem;
-  color: #2B0E64;
+  color: #2b0e64;
+  width: fit-content;
 `;
 
 export const HabiCont = styled.div`
   display: inline-block;
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: #373737;
   font-size: 1rem;
+  margin-right: 15px;
 `;
 
 export const HabilidadePai = styled.div`
@@ -116,3 +125,46 @@ export const HabiNeto = styled.div`
     margin-block-end: 0em;
   }
 `;
+
+export const Port = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #990285;
+  margin-top: 10px;
+`;
+
+export const ConTs = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #990285;
+  margin-top: 10px;
+`;
+
+export const Card = styled.div`
+
+`
+
+export const Projetos = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+`
+
+export const ProjetosBox =  styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 5px solid black;
+  padding: 15px;
+  min-height: 350px;
+
+  img{
+    width: 300px;
+  }
+
+`
