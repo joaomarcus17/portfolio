@@ -21,12 +21,19 @@ import {
   ConTs,
   Projetos,
   ProjetosBox,
+  ContsBox,
+  RedesSocias,
 } from "./stylePort/style.js";
 import programmer from "./images/programmer.png";
 import eu from "./images/eu.png";
 import thai_tanic from "./images/thai_tanic.png";
 import BabyCare from "./images/BabyCare.png";
 import react from "./images/react.png";
+import instagram from "./images/instagram.png";
+import linkedin from "./images/linkedin.png";
+import email from "./images/email.png";
+import github from "./images/github.png";
+import whatsapp from "./images/whatsapp.png";
 function App() {
   return (
     <DivPai>
@@ -118,6 +125,28 @@ function App() {
         <ConTs>
           <h1>Contatos</h1>
         </ConTs>
+        <RedesSocias>
+          <ContsBox>
+            <img src={instagram} />
+            <p>Instagram</p>
+          </ContsBox>
+          <ContsBox>
+            <img src={linkedin} />
+            <p>Likedin</p>
+          </ContsBox>
+          <ContsBox>
+            <img src={email} />
+            <p>Email</p>
+          </ContsBox>
+          <ContsBox>
+            <img src={github} />
+            <p>GitHub</p>
+          </ContsBox>
+          <ContsBox>
+            <img src={whatsapp} />
+            <p>Whatsapp</p>
+          </ContsBox>
+        </RedesSocias>
       </DivFilho>
     </DivPai>
   );

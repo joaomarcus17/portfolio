@@ -80,7 +80,7 @@ export const DivFotoT = styled.div`
     padding-right: 20px;
   }
 
-  img{
+  img {
     width: 400px;
     border-radius: 100%;
     height: 400px;
@@ -131,7 +131,7 @@ export const Port = styled.div`
   justify-content: center;
   align-items: center;
   color: #990285;
-  margin-top: 10px;
+  margin-top: 70px;
 `;
 
 export const ConTs = styled.div`
@@ -139,22 +139,19 @@ export const ConTs = styled.div`
   justify-content: center;
   align-items: center;
   color: #990285;
-  margin-top: 10px;
+  margin-top: 70px;
 `;
 
-export const Card = styled.div`
-
-`
+export const Card = styled.div``;
 
 export const Projetos = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+`;
 
-`
-
-export const ProjetosBox =  styled.div`
+export const ProjetosBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,8 +160,28 @@ export const ProjetosBox =  styled.div`
   padding: 15px;
   min-height: 350px;
 
-  img{
+  img {
     width: 300px;
   }
+`;
+export const ContsBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 5px solid black;
+  padding: 15px;
+  min-height: 100px;
 
-`
+  img {
+    width: 100px;
+  }
+`;
+
+export const RedesSocias = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+`;
