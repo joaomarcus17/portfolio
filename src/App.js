@@ -23,6 +23,7 @@ import {
   ProjetosBox,
   ContsBox,
   RedesSocias,
+  GlobalStyle,
 } from "./stylePort/style.js";
 import programmer from "./images/programmer.png";
 import eu from "./images/eu.png";
@@ -34,11 +35,13 @@ import linkedin from "./images/linkedin.png";
 import email from "./images/email.png";
 import github from "./images/github.png";
 import whatsapp from "./images/whatsapp.png";
+import logo from "./images/logo.jpg";
+
 function App() {
   return (
     <DivPai>
+      <GlobalStyle/>
       <DivFilho>
-        <header>
           <NavBar>
             <DivLogo>
               <Links href="#">Home</Links>
@@ -49,7 +52,6 @@ function App() {
               <Links href="#">Contatos</Links>
             </DivLinks>
           </NavBar>
-        </header>
         <DivFundo>
           <ImgProgrammer src={programmer} />
           <div>

@@ -1,5 +1,16 @@
 import styled from "styled-components";
 import banner from "../images/banner.png";
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+  margin: 0%;
+  padding: 0%;
+  margin-left: 0%;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Montserrat&family=Roboto+Slab&family=Roboto:wght@100&display=swap');
+
+`;
 
 export const DivPai = styled.div`
   background-color: #e5e5e5;
@@ -8,20 +19,24 @@ export const DivPai = styled.div`
   align-items: center;
 `;
 export const DivFilho = styled.div`
-  width: 1600px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  box-sizing: border-box;
+  max-width: 1600px;
+
+  margin-left: 20px;
+  margin-right: 20px;
 `;
 
 export const DivLogo = styled.div`
   display: flex;
+  font-family: "Roboto", sans-serif;
 `;
 export const NavBar = styled.div`
   display: flex;
-  margin: 0.5em;
   justify-content: space-between;
+  max-width: 1600px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
 export const DivLinks = styled.div`
   display: flex;
@@ -31,6 +46,7 @@ export const DivLinks = styled.div`
 export const Links = styled.a`
   text-decoration: none;
   color: #990285;
+  font-family: "Roboto", sans-serif;
 `;
 
 export const DivCont = styled.div`
@@ -45,6 +61,7 @@ export const DivFundo = styled.div`
   width: auto;
   background-image: url(${banner});
   background-size: cover;
+  margin-top: 0px;
 
   div {
     text-align: center;
@@ -56,8 +73,9 @@ export const ImgProgrammer = styled.img``;
 
 export const LetrasBanner = styled.h1`
   color: #c4c4c4;
-  font-size: 6em;
+  font-size: 5em;
   margin-top: 1em;
+  font-family: "Roboto", sans-serif;
 `;
 
 export const LetrasP = styled.p`
@@ -66,6 +84,7 @@ export const LetrasP = styled.p`
   text-align: center;
   margin-top: -1em;
   margin-left: -0.5em;
+  font-family: "Montserrat", sans-serif;
 `;
 
 export const DivFotoT = styled.div`
@@ -78,6 +97,7 @@ export const DivFotoT = styled.div`
     margin-left: 150px;
     font-size: 30px;
     padding-right: 20px;
+    font-family: "Montserrat", sans-serif;
   }
 
   img {
@@ -98,6 +118,10 @@ export const LetrasDeitadas = styled.p`
   font-size: 1.5rem;
   color: #2b0e64;
   width: fit-content;
+  font-family: "Jacques Francois", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
 `;
 
 export const HabiCont = styled.div`
@@ -106,6 +130,7 @@ export const HabiCont = styled.div`
   color: #373737;
   font-size: 1rem;
   margin-right: 15px;
+  font-family: "Roboto", sans-serif;
 `;
 
 export const HabilidadePai = styled.div`
@@ -142,8 +167,6 @@ export const ConTs = styled.div`
   margin-top: 70px;
 `;
 
-export const Card = styled.div``;
-
 export const Projetos = styled.div`
   display: flex;
   justify-content: space-between;
@@ -159,6 +182,10 @@ export const ProjetosBox = styled.div`
   border: 5px solid black;
   padding: 15px;
   min-height: 350px;
+  font-family: "Jacques Francois", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
 
   img {
     width: 300px;
@@ -172,6 +199,10 @@ export const ContsBox = styled.div`
   border: 5px solid black;
   padding: 15px;
   min-height: 100px;
+  font-family: "Jacques Francois", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
 
   img {
     width: 100px;
